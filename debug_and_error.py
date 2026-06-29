@@ -75,11 +75,36 @@
 #it suppost to be 80 
 
 #misison 9
-password = "abc123"
-guess = input("Enter password: ")
+# password = "abc123"
+# guess = input("Enter password: ")
 
-if guess == password:
-    print("Login successful")
-else:
-    print("Wrong password")
+# if guess == password:
+#     print("Login successful")
+# else:
+#     print("Wrong password")
 #The bug is that if I enter the wrong code it logs me in.
+
+#misison 10
+# num1 = int(input("Number 1: "))
+# op = input("Operator: ")
+# num2 = int(input("Number 2: "))
+try:
+    num1 = int(input("Number 1: "))
+    op = input("Operator: ")
+    num2 = int(input("Number 2: "))
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+        print(num1 / num2)
+    else:
+        print("unknowm operetor")
+except ZeroDivisionError:
+    print("cannot divide by zero")
+except ValueError:
+    print("enter numbers")
+finally:
+    print("calculator closed")
