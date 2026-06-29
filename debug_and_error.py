@@ -50,11 +50,17 @@
 # except NameError:
 #     print("not ")
 #mission 6
-try:
-    score = int(input("Enter score: "))
-    print("Your score is", score)
-except ValueError:
-    print("invalid score")
-finally:
-    print("check finished")
+# try:
+#     score = int(input("Enter score: "))
+#     print("Your score is", score)
+# except ValueError:
+#     print("invalid score")
+# finally:
+#     print("check finished")
+#mission 7
+name = input("Enter your name: ")
+if name == "admin"
+    print("Welcome admin")
+else:
+    print("Welcome user")
 
