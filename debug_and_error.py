@@ -165,14 +165,27 @@
 #     print("enter numbers")
 
 #misison 6
-numbers = [4, 10, 2, 8]
-maximum = 0
+# numbers = [4, 10, 2, 8]
+# maximum = 0
 
-for number in numbers:
-    if number > maximum:
-        maximum = number
+# for number in numbers:
+#     if number > maximum:
+#         maximum = number
 
-print(maximum)
+# print(maximum)
 #output=0
 #expected output=10
 
+#misison 7
+user = {
+    "name": "Dana",
+    "age": 25
+}
+
+field = input("Choose field: ")
+try:
+    print(user[field].upper())
+except AttributeError:
+    print("cannot upper numbers")
+except KeyError:
+    print("key not exzist")
