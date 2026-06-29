@@ -67,11 +67,19 @@
 #because its not an error code
 
 #missiom 8
-price = 100
-discount = 20
-final_price = price - price / 100*discount
-print(final_price)
+# price = 100
+# discount = 20
+# final_price = price - price / 100*discount
+# print(final_price)
 #logic error
 #it suppost to be 80 
 
+#misison 9
+password = "abc123"
+guess = input("Enter password: ")
 
+if guess == password:
+    print("Login successful")
+else:
+    print("Wrong password")
+#The bug is that if I enter the wrong code it logs me in.
