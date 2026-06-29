@@ -111,9 +111,17 @@
 
 #part 2
 #mission 1
+# try:
+#     celsius = input("Celsius: ")
+#     fahrenheit = int(celsius) * 9 / 5 + 32
+#     print(fahrenheit)
+# except ValueError:
+#     print("temp must be a number")
+
+#misison 2
+word = input("Enter word: ")
 try:
-    celsius = input("Celsius: ")
-    fahrenheit = int(celsius) * 9 / 5 + 32
-    print(fahrenheit)
-except ValueError:
-    print("temp must be a number")
+    print(word[0])
+except IndexError:
+    print("word is empty")
+
