@@ -177,15 +177,30 @@
 #expected output=10
 
 #misison 7
-user = {
-    "name": "Dana",
-    "age": 25
-}
+# user = {
+#     "name": "Dana",
+#     "age": 25
+# }
 
-field = input("Choose field: ")
+# field = input("Choose field: ")
+# try:
+#     print(user[field].upper())
+# except AttributeError:
+#     print("cannot upper numbers")
+# except KeyError:
+#     print("key not exzist")
+
+#mission 8
 try:
-    print(user[field].upper())
-except AttributeError:
-    print("cannot upper numbers")
-except KeyError:
-    print("key not exzist")
+    price = int(input("Price: "))
+    amount = int(input("Amount: "))
+    total = price * amount
+    total_after_disc=total
+    if amount > 3:
+        total_after_disc = total*0.9
+
+    print(total_after_disc)
+
+except ValueError:
+    print("enter only numbers")
+
