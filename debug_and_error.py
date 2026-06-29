@@ -57,10 +57,21 @@
 #     print("invalid score")
 # finally:
 #     print("check finished")
+
 #mission 7
-name = input("Enter your name: ")
-if name == "admin"
-    print("Welcome admin")
-else:
-    print("Welcome user")
+# name = input("Enter your name: ")
+# if name == "admin":
+#     print("Welcome admin")
+# else:
+#     print("Welcome user")
+#because its not an error code
+
+#missiom 8
+price = 100
+discount = 20
+final_price = price - price / 100*discount
+print(final_price)
+#logic error
+#it suppost to be 80 
+
 
