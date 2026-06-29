@@ -34,19 +34,27 @@
 #     print("item not found")
 
 #mission 5
-numbers = [100, 200, 300]
+# numbers = [100, 200, 300]
+# try:
+#     index = int(input("Choose index: "))
+#     divider = int(input("Choose divider: "))
+# except ValueError:
+#     print("enter numbers")
+# try:    
+#     result = numbers[index] / divider
+#     print(result)
+# except IndexError:
+#     print("index out of range")
+# except ZeroDivisionError:
+#     print("cannot divide by zero")
+# except NameError:
+#     print("not ")
+#mission 6
 try:
-    index = int(input("Choose index: "))
-    divider = int(input("Choose divider: "))
+    score = int(input("Enter score: "))
+    print("Your score is", score)
 except ValueError:
-    print("enter numbers")
-try:    
-    result = numbers[index] / divider
-    print(result)
-except IndexError:
-    print("index out of range")
-except ZeroDivisionError:
-    print("cannot divide by zero")
-except NameError:
-    print("not ")
+    print("invalid score")
+finally:
+    print("check finished")
 
