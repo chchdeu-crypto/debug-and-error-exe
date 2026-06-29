@@ -191,16 +191,31 @@
 #     print("key not exzist")
 
 #mission 8
+# try:
+#     price = int(input("Price: "))
+#     amount = int(input("Amount: "))
+#     total = price * amount
+#     total_after_disc=total
+#     if amount > 3:
+#         total_after_disc = total*0.9
+
+#     print(total_after_disc)
+
+# except ValueError:
+#     print("enter only numbers")
+
+#mission 9
 try:
-    price = int(input("Price: "))
-    amount = int(input("Amount: "))
-    total = price * amount
-    total_after_disc=total
-    if amount > 3:
-        total_after_disc = total*0.9
+    grade = int(input("Grade: "))
 
-    print(total_after_disc)
-
+    if grade >= 90:
+        print("Excellent")
+    if grade >= 70:
+        print("Good")
+    if grade >= 55:
+        print("Pass")
+    else:
+        print("Fail")
+#bug because it using only if it print all valuse insdet to stop after find
 except ValueError:
     print("enter only numbers")
-
