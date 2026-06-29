@@ -126,15 +126,31 @@
 #     print("word is empty")
 
 #mission 3
-scores = [90, 80, 100]
-total = 0
+# scores = [90, 80, 100]
+# total = 0
 
-for score in scores:
-    total += score
+# for score in scores:
+#     total += score
 
-average = total / len(scores)
-print(average)
+# average = total / len(scores)
+# print(average)
 
 #output 33.33
 #logig error
 #print(total)=100
+
+#mission 4
+products = {
+    "pen": 4,
+    "notebook": 12
+}
+product = input("Product: ")
+try:
+    amount = int(input("Amount: "))
+except ValueError:
+    print("enter numbers")
+try:
+    print(products[product] * amount)
+except KeyError:
+    ("not found index")
+
