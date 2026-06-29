@@ -140,17 +140,27 @@
 #print(total)=100
 
 #mission 4
-products = {
-    "pen": 4,
-    "notebook": 12
-}
-product = input("Product: ")
+# products = {
+#     "pen": 4,
+#     "notebook": 12
+# }
+# product = input("Product: ")
+# try:
+#     amount = int(input("Amount: "))
+# except ValueError:
+#     print("enter numbers")
+# try:
+#     print(products[product] * amount)
+# except KeyError:
+#     ("not found index")
+
+#mission 5
+files = ["data.txt", "users.csv", "notes.txt"]
 try:
-    amount = int(input("Amount: "))
+    choice = int(input("Choose file number: "))
+    print(files[choice])
+except IndexError:
+    print("out of tange")
 except ValueError:
     print("enter numbers")
-try:
-    print(products[product] * amount)
-except KeyError:
-    ("not found index")
 
