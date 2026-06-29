@@ -155,12 +155,24 @@
 #     ("not found index")
 
 #mission 5
-files = ["data.txt", "users.csv", "notes.txt"]
-try:
-    choice = int(input("Choose file number: "))
-    print(files[choice])
-except IndexError:
-    print("out of tange")
-except ValueError:
-    print("enter numbers")
+# files = ["data.txt", "users.csv", "notes.txt"]
+# try:
+#     choice = int(input("Choose file number: "))
+#     print(files[choice])
+# except IndexError:
+#     print("out of tange")
+# except ValueError:
+#     print("enter numbers")
+
+#misison 6
+numbers = [4, 10, 2, 8]
+maximum = 0
+
+for number in numbers:
+    if number > maximum:
+        maximum = number
+
+print(maximum)
+#output=0
+#expected output=10
 
