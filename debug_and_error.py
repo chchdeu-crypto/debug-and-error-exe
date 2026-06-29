@@ -88,23 +88,32 @@
 # num1 = int(input("Number 1: "))
 # op = input("Operator: ")
 # num2 = int(input("Number 2: "))
+# try:
+#     num1 = int(input("Number 1: "))
+#     op = input("Operator: ")
+#     num2 = int(input("Number 2: "))
+#     if op == "+":
+#         print(num1 + num2)
+#     elif op == "-":
+#         print(num1 - num2)
+#     elif op == "*":
+#         print(num1 * num2)
+#     elif op == "/":
+#         print(num1 / num2)
+#     else:
+#         print("unknowm operetor")
+# except ZeroDivisionError:
+#     print("cannot divide by zero")
+# except ValueError:
+#     print("enter numbers")
+# finally:
+#     print("calculator closed")
+
+#part 2
+#mission 1
 try:
-    num1 = int(input("Number 1: "))
-    op = input("Operator: ")
-    num2 = int(input("Number 2: "))
-    if op == "+":
-        print(num1 + num2)
-    elif op == "-":
-        print(num1 - num2)
-    elif op == "*":
-        print(num1 * num2)
-    elif op == "/":
-        print(num1 / num2)
-    else:
-        print("unknowm operetor")
-except ZeroDivisionError:
-    print("cannot divide by zero")
+    celsius = input("Celsius: ")
+    fahrenheit = int(celsius) * 9 / 5 + 32
+    print(fahrenheit)
 except ValueError:
-    print("enter numbers")
-finally:
-    print("calculator closed")
+    print("temp must be a number")
