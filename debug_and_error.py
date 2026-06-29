@@ -119,9 +119,22 @@
 #     print("temp must be a number")
 
 #misison 2
-word = input("Enter word: ")
-try:
-    print(word[0])
-except IndexError:
-    print("word is empty")
+# word = input("Enter word: ")
+# try:
+#     print(word[0])
+# except IndexError:
+#     print("word is empty")
 
+#mission 3
+scores = [90, 80, 100]
+total = 0
+
+for score in scores:
+    total += score
+
+average = total / len(scores)
+print(average)
+
+#output 33.33
+#logig error
+#print(total)=100
