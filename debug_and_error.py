@@ -205,17 +205,43 @@
 #     print("enter only numbers")
 
 #mission 9
-try:
-    grade = int(input("Grade: "))
+# try:
+#     grade = int(input("Grade: "))
 
-    if grade >= 90:
-        print("Excellent")
-    if grade >= 70:
-        print("Good")
-    if grade >= 55:
-        print("Pass")
+#     if grade >= 90:
+#         print("Excellent")
+#     if grade >= 70:
+#         print("Good")
+#     if grade >= 55:
+#         print("Pass")
+#     else:
+#         print("Fail")
+# #bug because it using only if it print all valuse insdet to stop after find
+# except ValueError:
+#     print("enter only numbers")
+
+#mission 10
+balance = 100
+
+action = input("Action: ")
+try:
+    amount = int(input("Amount: "))
+    if action == "deposit":
+        balance = balance + amount
+        print(balance)
+    elif action == "withdraw":
+        if amount<=balance:
+            balance = balance - amount
+            print(balance)
+        else:
+            print("not enough money")
+    # print("Balance:", balance)
     else:
-        print("Fail")
-#bug because it using only if it print all valuse insdet to stop after find
+        print("unknown action")
+        
+    print("Balance:", balance)
+
 except ValueError:
     print("enter only numbers")
+finally:
+     print("bank action finishd")
